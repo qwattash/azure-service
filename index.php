@@ -1,5 +1,5 @@
 <?php
-//header("Location:".$_SERVER['SERVER_NAME']."/registration/index.php");
+header("Location: http://".$_SERVER['SERVER_NAME']."/registration/index.php");
 ?>
 <html>
 <head>
@@ -7,6 +7,6 @@
 <meta charset="UTF-8"/>
 </head>
 <body>
-<a href="registration/index.php">registration</a>
+<p>If redirection does not work click<a href="registration/index.php">here</a></p>
 </body>
 </html>
