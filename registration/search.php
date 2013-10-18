@@ -86,7 +86,6 @@
        if (substr($delete_query, -3) == " OR") 
        	  $delete_query = substr($delete_query, 0, 
 	  		  	count($delete_query) - 3);
-       echo "d:".$delete_query;
        $stmt = $conn->prepare($delete_query);
        $stmt->execute($delete_ids);
     }
