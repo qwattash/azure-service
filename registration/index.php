@@ -8,10 +8,13 @@
 <h1>Register here!</h1>
 <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
 <form method="post" action="index.php" enctype="multipart/form-data" >
-      Name  <input type="text" name="name" id="name"/></br>
-      Email <input type="text" name="email" id="email"/></br>
-      Company <input type="text" name="company" id="company"/></br>
+  <fieldset>
+    <legend> Registration Form </legend>
+      <span>Name:</span><input type="text" name="name" id="name"/></br>
+      <span>Email:</span><input type="text" name="email" id="email"/></br>
+      <span>Company:</span><input type="text" name="company" id="company"/></br>
       <input type="submit" name="submit" value="Submit" />
+  </fieldset>
 </form>
 <?php
     // DB connection info
@@ -55,7 +58,11 @@
     $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
-        echo "<h2>People who are registered:</h2>";
+        echo "
+<h2>People who are registered
+  <a class='search_button' href='search.php'> [-Search-]
+  </a>:
+</h2>";
         echo "<table>";
         echo "<tr><th>Name</th>";
         echo "<th>Email</th>";
