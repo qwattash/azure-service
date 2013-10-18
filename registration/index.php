@@ -10,9 +10,9 @@
 <form method="post" action="index.php" enctype="multipart/form-data" >
   <fieldset>
     <legend> Registration Form </legend>
-      <span>Name:</span><input type="text" name="name" id="name"/></br>
-      <span>Email:</span><input type="text" name="email" id="email"/></br>
-      <span>Company:</span><input type="text" name="company" id="company"/></br>
+      <span class='label'>Name:</span><input type="text" name="name" id="name"/></br>
+      <span class='label'>Email:</span><input type="text" name="email" id="email"/></br>
+      <span class='label'>Company:</span><input type="text" name="company" id="company"/></br>
       <input type="submit" name="submit" value="Submit" />
   </fieldset>
 </form>

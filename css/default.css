@@ -27,7 +27,7 @@ legend {
     color: #FFFFFF;
 }
 
-span {
+span.label {
 position: relative;
 clear: left;
 float: left;
@@ -36,7 +36,10 @@ text-align: right;
 padding-top: 10px;
 }
 
+span.radio {
+    
+}
+
 input {
     margin: 5px;
-    display: inline;
 }
