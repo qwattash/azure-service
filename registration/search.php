@@ -95,7 +95,7 @@
        $sql_select_condition = "";
        $values = array();
        if ($_POST['name']) {
-       	  $sql_select_condition .= " name = :name AND";
+       	  $sql_select_condition .= " name LIKE '%:name%' AND";
 	  $values[':name'] = $_POST['name'];
        }
        if ($_POST['email']) {
